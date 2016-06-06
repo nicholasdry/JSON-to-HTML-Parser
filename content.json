@@ -1,0 +1,23 @@
+{
+  "title": "Dictionaries",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Dictionaries are Pythons built in hash-table equivalent. Dictionaries operate off a series of ‘keys’. As seen below dictionaries are very powerful and very simple to implement."
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "personal = {\n              'Name': 'Nicholas Dry',\n              'Age': 21,\n              'Location': 'New Jersey'\n            }"
+    },
+    {
+      "type": "text",
+      "data": "If we want to access these values, you can use the key name itself, or if you don’t know the key names, you can export the values in the list into a list object."
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "personal = {\n              'Name': 'Nicholas Dry',\n              'Age': 21,\n              'Location': 'New Jersey'\n            }\n            \nprint(personal['Name']) # This will print out the value with the key matching name\n\npersonalValues = personal.values()  # This will output as 'dict_values(['New Jersey', 'Nicholas Dry', 21])'\n\npersonalKeys = personal.keys()  # This will output as 'dict_keys(['Age', 'Name', 'Location'])'\n\nfor i in personalKeys:  # This will allow you to run through the list, assign the value to i, then search accordingly in the list\n  print(personal[i])"
+    }
+  ]
+}

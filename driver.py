@@ -1,10 +1,12 @@
+# Nicholas Dry
 # Rebuilding of the output to HTML via JSON from the application Quiver.
 
 # TODO: Allow each page to access a parent and a sibling page.
+# TODO: Implement os.walk to print out subdirectories
 # TODO: Style code pages differently.
 
 import json
-import os
+import os   # TODO: implement os.walk(), and os.chdir()
 import sys
 
 def generateCSS(outputFile):    # Generates <style> css in the HTML file.
@@ -36,7 +38,6 @@ def indexOpenTags(outputFile):  # Generates all the boilerplate opening code for
 def closeTags(outputFile):  # Generates all the boilerplate closing code.
     outputFile.write("\t</body>\n")
     outputFile.write("</html>")
-
 
 directory = os.listdir() # This returns the current working directory.
 jsonFiles = []
